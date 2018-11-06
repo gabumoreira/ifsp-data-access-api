@@ -1,5 +1,3 @@
-    
-
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -15,8 +13,7 @@ SECRET_KEY = '2=ebx*(e_t)fgg1ldup*7120yme-2hxm=rj7c$%3w5*iuuh0ph'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
