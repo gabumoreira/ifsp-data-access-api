@@ -1,1 +1,1 @@
-rest_framework
+djangorestframework==3.9.0
