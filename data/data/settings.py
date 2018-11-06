@@ -47,6 +47,18 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
+#        'rest_framework.filters.FilterSet',
+        'rest_framework.filters.SearchFilter',
+        'rest_framework.filters.OrderingFilter',
+    ),
+#    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+#    'DEFAULT_PAGINATION_CLASS': 'jaci.paginations.extra_pagination.JaciPagination',
+#    'PAGE_SIZE': 50
+}
+
 ROOT_URLCONF = 'data.urls'
 
 TEMPLATES = [
